@@ -9,7 +9,7 @@ Some different data pipelines have been tested:
 - SUB-PIPELINE3: all isotypes with all the Bsources
 - SUB-PIPELINE4: all isotypes with Unsorted B cells
 
-In this repository we report the pipeline described in the paper: (SUB-PIPELINE1) only IgG and IgA with all the Bsources
+The data pipeline used for the paper is: (SUB-PIPELINE1) only IgG and IgA with all the Bsources.
 ## 1. FOR EACH SUB-PIPELINE:
 
 **Main folder** : `./SUB-PIPELINE.../`
@@ -19,8 +19,7 @@ Inside each sub-pipeline folder, the code has been customized to retrieve the sp
 
 :
 ```
-```bash
-./code/1_extract_cdr3.sh 
+./code/1_extract_healthy_cdr3.sh 
 ```
 For each pipeline, it will create the following files:
 * `1_cdrh3_part1.csv`
@@ -59,4 +58,4 @@ This script splits the dataset in ~80-10-10, keeping larger clusters for the tra
 ```bash
 ./code/5_train_val_test_split.sh
 ```
-README
+
